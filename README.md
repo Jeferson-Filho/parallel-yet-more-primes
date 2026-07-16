@@ -1,5 +1,3 @@
-# parallel-yet-more-primes
-
 <a id="readme-top"></a>
 
 <div align="center">
