@@ -1,5 +1,5 @@
 FLAGS=-O3 -Wall
-OUT=primetest
+OUT=primetest-parallel
 
 all: primetest
 
