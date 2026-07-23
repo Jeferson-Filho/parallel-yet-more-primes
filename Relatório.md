@@ -49,6 +49,9 @@ A seguir estão representados os resultados obtidos em cada teste e logo abaixo 
 | 100 | 2412.38 | 13301.26 | 5.51x | 34.5% |
 | 125 | 3517.41 | 22166.27 | 6.30x | 39.4% |
 
+Os resultados obtidos demonstram que a paralelização foi eficaz para reduzir o tempo de execução, de forma ainda mais perceptivel conforme o aumento do tamanho do input. Enquanto para entradas pequenas (10 e 20) o ganho de desempenho foi pouco significativo.
+Podemos observar que tempo de execução da versão sequencial cresce rapidamente com o aumento da entrada, enquanto a versão paralela apresenta um crescimento significativamente menor. Para o maior tamanho de input avaliado (125), o tempo de execução foi reduzido de **22.166 ms** para **3.517 ms**, resultando em um **speedup de 6,30×**.
+
 ## Descrição dos Gráficos
 
 ### 1. Tempo de Execução (Linear)
@@ -73,6 +76,8 @@ Representa a razão entre o tempo de execução sequencial e o tempo de execuç�
 
 <img width="940" height="700" alt="Speedup" src="https://github.com/user-attachments/assets/ab51f200-4b50-4df3-81c7-288c72e2f5ac" />
 
+O gráfico de **Speedup** mostra que o ganho de desempenho aumenta conforme cresce o tamanho da entrada, indicando boa escalabilidade da solução. Isso se da por conta da maior quantidade de combinações disponíveis permitir distribuir melhor o trabalho entre as threads, reduzindo o impacto dos custos de gerenciamento da paralelização.
+
 ---
 
 ### 4. Eficiência
@@ -80,3 +85,5 @@ Representa a razão entre o tempo de execução sequencial e o tempo de execuç�
 Representa o percentual de aproveitamento do hardware, calculado pela razão entre o **speedup** e o número de threads utilizadas (**8**).
 
 <img width="940" height="700" alt="Eficiência" src="https://github.com/user-attachments/assets/064abe44-81f1-4108-b565-6f5a84d7574f" />
+
+Da mesma forma, a **eficiência** também cresce com o aumento do tamanho da entrada, passando de **6,5%** para aproximadamente **39,4%** utilizando oito threads.
