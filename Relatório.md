@@ -82,8 +82,8 @@ O gráfico de **Speedup** mostra que o ganho de desempenho aumenta conforme cres
 
 ### 4. Eficiência
 
-Representa o percentual de aproveitamento do hardware, calculado pela razão entre o **speedup** e o número de threads utilizadas (**8**).
+Representa o percentual de aproveitamento do hardware, calculado pela razão entre o **speedup** e o número de threads utilizadas (**16**).
 
 <img width="940" height="700" alt="Eficiência" src="https://github.com/user-attachments/assets/064abe44-81f1-4108-b565-6f5a84d7574f" />
 
-Da mesma forma, a **eficiência** também cresce com o aumento do tamanho da entrada, passando de **6,5%** para aproximadamente **39,4%** utilizando oito threads.
+Da mesma forma, a **eficiência** também cresce com o aumento do tamanho da entrada, passando de **6,5%** para aproximadamente **39,4%** utilizando 16 threads.
